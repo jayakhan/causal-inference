@@ -33,9 +33,9 @@ To be able to analyse what influence the `super host` label has on the estimated
 ### 4. Regression
 Our regressions were based on the matched dataset provided by DAME-FLAME output. We first ran a regression that included our response variable grouped by host status and all predictors (except the one used in revenue calculation that was part of our analysis after data cleaning). Assessment of this model violated the assumption of linearity and normality with a Q-Q-plot that suggested an exponential distribution (Figure 1.3), which led us to run a second regression on log-transformed data. This second regression satisfied the assumptions for linear regressions (Figure 1.4), and we proceeded to use it four our statistical analysis.
 
-### The shape of the plot on right suggests that a log transformation of the data could improve model performance down the line.
-![Alt text](30_results/qq before log.png?raw=true "On Original Response Variable")
-![Alt text](30_results/Q-Q-Plot post log transform.png?raw=true "On Log Transformed Response Variable")
+### The shape of the second QQ plot suggests that a log transformation of the data could improve model performance down the line.
+![Alt text](30_results/qq_before_log.png?raw=true "On Original Response Variable")
+![Alt text](30_results/Q-Q-Plot_post_log.png?raw=true "On Log Transformed Response Variable")
 
 ## Results
 ![Alt text](30_results/Regression.JPG?raw=true "Regression Results")
@@ -54,30 +54,24 @@ Below table shows statistical significance of super host variable which is way a
 ## References
 
 [1] Airbnb. (2015). "Airbnb Summer Travel Report 2015." Retrieved 04/03/2022, from
-https://blog.atairbnb.com/wp-content/uploads/2015/09/Airbnb-Summer-Travel-Report-1.pdf.Airbnb.
-(2022). "Get the Data." Retrieved 04/03/2022, from http://insideairbnb.com/get-the-data.html.
-[2] Airbnb. (2022). "Superhost: Recognizing the best in hospitality." Retrieved 04/03/2022, from
-https://www.airbnb.com/d/superhost.
-[3] Chattopadhyay, M. and S. K. Mitra (2020). "What Airbnb Host Listings Influence Peer-to-Peer
-Tourist Accommodation Price?" Journal of Hospitality & Tourism Research44(4): 597-623.
-[4] Deboosere, R., D. J. Kerrigan, D. Wachsmuth and A. El-Geneidy (2019). "Location, location and
-professionalization: a multilevel hedonic analysis of Airbnb listing prices and revenue." Regional
-Studies, Regional Science6(1): 143-156.
-[5] Dogru, T., M. Mody, C. Suess, N. Line and M. Bonn (2020). "Airbnb 2.0: Is it a sharing economy
-platform or a lodging corporation?" Tourism Management78: 104049.
-[6] Kwok, L. and K. L. Xie (2019). "Pricing strategies on Airbnb: Are multi-unit hosts revenue pros?"
-International Journal of Hospitality Management82: 252-259.
-[7] Lane, J. and R. M. Woodworth (2016). "The sharing economy checks in: An analysis of Airbnb in
-the United States." CBRE Hotel’s Americas Research.
-[8] Lewis, T. (2020). "Airbnb Statistics (Growth, Revenue, Hosts + More!)." Retrieved 04/03/2022,
-from 8.https://hostsorter.com/airbnb-statistics/.Management, i. (2022). "Airbnb Statistics." from
-https://ipropertymanagement.com/research/airbnb-statistics.
-[9] Poppick, S. (2015). "Airbnb Says Renting Your Place Is Like Getting a Big Raise." Retrieved
-04/03/2022, from https://money.com/airbnb-raise-income-report/.Xie, K., C. Y. Heo and Z. E. Mao
-(2021). "Do professional hosts matter? Evidence from multi-listing and full-time hosts in Airbnb."
-Journal of Hospitality and Tourism Management47: 413-421.
-[10] Xie, K.and Z. Mao (2019). "Locational strategy of professional hosts: Effect on perceived quality
-and revenue performance of Airbnb listings." Journal of Hospitality & Tourism Research43(6): 919-
-929.
-[11] Zervas, G., D. Proserpio and J. W. Byers (2017). "The Rise ofthe Sharing Economy: Estimating
-the Impact of Airbnb on the Hotel Industry." Journal of Marketing Research54(5): 687-705.
+https://blog.atairbnb.com/wp-content/uploads/2015/09/Airbnb-Summer-Travel-Report-1.pdf.Airbnb. (2022). "Get the Data." Retrieved 04/03/2022, from http://insideairbnb.com/get-the-data.html.
+
+[2] Airbnb. (2022). "Superhost: Recognizing the best in hospitality." Retrieved 04/03/2022, from https://www.airbnb.com/d/superhost.
+
+[3] Chattopadhyay, M. and S. K. Mitra (2020). "What Airbnb Host Listings Influence Peer-to-Peer Tourist Accommodation Price?" Journal of Hospitality & Tourism Research44(4): 597-623.
+
+[4] Deboosere, R., D. J. Kerrigan, D. Wachsmuth and A. El-Geneidy (2019). "Location, location and professionalization: a multilevel hedonic analysis of Airbnb listing prices and revenue." Regional Studies, Regional Science6(1): 143-156.
+
+[5] Dogru, T., M. Mody, C. Suess, N. Line and M. Bonn (2020). "Airbnb 2.0: Is it a sharing economy platform or a lodging corporation?" Tourism Management78: 104049.
+
+[6] Kwok, L. and K. L. Xie (2019). "Pricing strategies on Airbnb: Are multi-unit hosts revenue pros?" International Journal of Hospitality Management82: 252-259.
+
+[7] Lane, J. and R. M. Woodworth (2016). "The sharing economy checks in: An analysis of Airbnb in the United States." CBRE Hotel’s Americas Research.
+
+[8] Lewis, T. (2020). "Airbnb Statistics (Growth, Revenue, Hosts + More!)." Retrieved 04/03/2022, from 8 https://hostsorter.com/airbnb-statistics/.Management, i. (2022). "Airbnb Statistics." from https:/ ipropertymanagement.com/research/airbnb-statistics.
+
+[9] Poppick, S. (2015). "Airbnb Says Renting Your Place Is Like Getting a Big Raise." Retrieved 04/03/2022, from https://money.com/airbnb-raise-income-report/.Xie, K., C. Y. Heo and Z. E. Mao (2021). "Do professional hosts matter? Evidence from multi-listing and full-time hosts in Airbnb." Journal of Hospitality and Tourism Management47: 413-421.
+
+[10] Xie, K.and Z. Mao (2019). "Locational strategy of professional hosts: Effect on perceived quality and revenue performance of Airbnb listings." Journal of Hospitality & Tourism Research43(6): 919-929.
+
+[11] Zervas, G., D. Proserpio and J. W. Byers (2017). "The Rise ofthe Sharing Economy: Estimating the Impact of Airbnb on the Hotel Industry." Journal of Marketing Research54(5): 687-705.
